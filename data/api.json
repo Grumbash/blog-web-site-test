@@ -1,0 +1,63 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Title 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      "content": "Detailed content of the article 1...",
+      "imageUrl": "/placeholder_image.webp",
+      "comments": [
+        {
+          "id": 1,
+          "author": "John Doe",
+          "content": "Great article!",
+          "date": "2024-06-20T14:48:00.000Z"
+        },
+        {
+          "id": 2,
+          "author": "Jane Smith",
+          "content": "Very informative, thank you.",
+          "date": "2024-06-20T14:48:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Title 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      "content": "Detailed content of the article 2...",
+      "imageUrl": "/placeholder_image.webp",
+      "comments": [
+        {
+          "id": 1,
+          "author": "Anonymous",
+          "content": "wow",
+          "date": "2024-06-20T17:46:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Title 3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      "content": "Detailed content of the article 3...",
+      "imageUrl": "/placeholder_image.webp",
+      "comments": [
+        {
+          "id": 1,
+          "author": "Alice Brown",
+          "content": "I learned a lot from this article.",
+          "date": "2024-06-20T14:48:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Title 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      "content": "Detailed content of the article 4...",
+      "imageUrl": "/placeholder_image.webp",
+      "comments": []
+    }
+  ]
+}
