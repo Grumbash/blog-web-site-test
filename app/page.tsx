@@ -28,8 +28,11 @@ export default async function Home() {
                 <h2 className="text-2xl font-bold">{article.title}</h2>
                 <p className="mt-2 text-gray-600">{article.description}</p>
               </div>
-              <Link href={`/articles/${article.id}`} className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded">
-                  Button
+              <Link
+                href={`/articles/${article.id}`}
+                className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded"
+              >
+                Button
               </Link>
             </div>
           </div>

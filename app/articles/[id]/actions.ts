@@ -8,7 +8,11 @@ export async function getArticleData(id: string): Promise<Article> {
   return res.data;
 }
 
-export async function addComment(id: string, author: string, content: string): Promise<Comment> {
+export async function addComment(
+  id: string,
+  author: string,
+  content: string
+): Promise<Comment> {
   const res = await axios.put(`/articles/${id}`, {
     author,
     content,

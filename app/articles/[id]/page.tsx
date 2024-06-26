@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { getArticleData, addComment } from "./actions";
 import { Article } from "@/types";
-import { ArticleDetail } from "@/componets/ArticleDetail";
+import { ArticleDetails } from "@/components/ArticleDetails";
 
 type Params = {
   params: {
@@ -17,6 +17,5 @@ export default async function ArticleDetailPage({ params }: Params) {
     notFound();
   }
 
-  return <ArticleDetail article={article} addComment={addComment} />;
- 
+  return <ArticleDetails article={article} addComment={addComment} />;
 }

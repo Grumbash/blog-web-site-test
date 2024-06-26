@@ -33,7 +33,7 @@ async function addComment(id: string, author: string, content: string) {
     id: article.comments.length + 1,
     author,
     content,
-    date: new Date().toISOString()
+    date: new Date().toISOString(),
   };
 
   article.comments.push(newComment);
