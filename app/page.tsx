@@ -1,4 +1,4 @@
-import { Article } from "@/components/Article";
+import { Article } from "@/components";
 
 import { getArticles } from "./actions";
 
@@ -9,7 +9,7 @@ export default async function Home() {
     <div className="container mx-auto p-4">
       <div className="grid grid-cols-1 gap-4">
         {articles.map((article) => (
-         <Article key={article.id} article={article} />
+          <Article key={article.id} article={article} />
         ))}
       </div>
       <div className="mt-4 text-center">
