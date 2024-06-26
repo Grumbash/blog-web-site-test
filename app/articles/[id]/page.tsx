@@ -1,15 +1,27 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getArticleData, addComment } from "./actions";
-import { ArticleType } from "@/types";
-import { ArticleDetails } from "@/components/ArticleDetails";
 
-type Params = {
+import { ArticleDetails } from "@/components";
+import { ArticleType } from "@/types";
+
+import { getArticleData, addComment } from "./actions";
+
+type Props = {
   params: {
     id: string;
   };
 };
 
-export default async function ArticleDetailPage({ params }: Params) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const article = await getArticleData(params.id).catch(() => null);
+
+  return {
+    title: article?.title || "Article",
+    description: article?.content || "Article content",
+  };
+}
+
+export default async function ArticleDetailPage({ params }: Props) {
   let article: ArticleType;
   try {
     article = await getArticleData(params.id);
