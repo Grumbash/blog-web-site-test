@@ -1,10 +1,10 @@
-import { Comment } from "./Comment";
+import { CommentType } from "./Comment";
 
-export type Article = {
+export type ArticleType = {
   id: number;
   title: string;
   description: string;
   content: string;
   imageUrl: string;
-  comments: Comment[];
+  comments: CommentType[];
 };

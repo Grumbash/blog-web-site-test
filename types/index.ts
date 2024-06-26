@@ -1,2 +1,2 @@
-export { type Article } from "./Article";
-export { type Comment } from "./Comment";
+export { type ArticleType } from "./Article";
+export { type CommentType } from "./Comment";

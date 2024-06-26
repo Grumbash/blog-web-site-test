@@ -5,10 +5,12 @@ type CommentFormProps = {
   isPending: boolean;
 };
 
-export const CommentForm: React.FC<CommentFormProps> = ({ onSubmit, value, onChange, isPending }) => {
-
-
-
+export const CommentForm: React.FC<CommentFormProps> = ({
+  onSubmit,
+  value,
+  onChange,
+  isPending,
+}) => {
   return (
     <form onSubmit={onSubmit}>
       <div className="mb-4">

@@ -1,9 +1,9 @@
 "use server";
 
 import axios from "@/axiosConfig";
-import { Article } from "@/types";
+import { ArticleType } from "@/types";
 
-export async function getArticles(): Promise<Article[]> {
+export async function getArticles(): Promise<ArticleType[]> {
   const res = await axios.get(`/articles`);
   return res.data;
 }

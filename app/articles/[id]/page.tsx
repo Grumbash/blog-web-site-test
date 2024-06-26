@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getArticleData, addComment } from "./actions";
-import { Article } from "@/types";
+import { ArticleType } from "@/types";
 import { ArticleDetails } from "@/components/ArticleDetails";
 
 type Params = {
@@ -10,7 +10,7 @@ type Params = {
 };
 
 export default async function ArticleDetailPage({ params }: Params) {
-  let article: Article;
+  let article: ArticleType;
   try {
     article = await getArticleData(params.id);
   } catch {
