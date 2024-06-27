@@ -21,7 +21,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Modularity and Reusability: Separating components and logic makes the codebase easier to manage and scale.
 - Type Safety: Using TypeScript enhances code quality and reduces errors.
 - Rapid UI Development: Tailwind CSS allows for fast and consistent styling.
-- Efficient Data Handling: Using Axios and mock data ensures quick and reliable API interactions.
+- Efficient Data Handling: Using mock data ensures quick and reliable API interactions.
 - Environment Management: Environment variables and configuration files facilitate secure and flexible setups.
 - SEO and Performance: Automated SEO tasks and Next.js optimizations ensure high performance with minimal additional effort.
 - Version Control: Git integration provides a robust framework for tracking changes and collaborative development.
